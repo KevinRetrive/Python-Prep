@@ -88,3 +88,6 @@ class PruebaDeCristalTest(unittest.TestCase):
         self.assertEqual(resultado, False)
 
 unittest.main(argv=[""],verbosity=2,exit=False)
+
+# Forma de escribir en mi pc las rutas:
+# c:\\Users\\Kevin\\OneDrive\\Escritorio\\Pyhton-Prep\\#Carpeta_que_quiera

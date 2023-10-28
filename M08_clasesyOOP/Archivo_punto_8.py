@@ -1,6 +1,10 @@
 class Funciones_2():
     def __init__(self,lista_final):
-        self.lista_final=lista_final
+        if type(lista_final)!=list:
+            self.lista_final=[]
+            raise ValueError("Se ingresaron tipo de datos inválidos, se esperaba una lista de números enteros")
+        else:
+            self.lista_final=lista_final
 
     def facto(self):
         for i in self.lista_final:
@@ -17,7 +21,7 @@ class Funciones_2():
             else:
                 print('Elemento', i, 'NO primo')
         
-    def _facto(self,num):# Agregar self a todos y ver que más preciso
+    def _facto(self,num): # Agregar self a todos
         if (num <0 or type(num)==float):
             return "Error. Se debe ingresar un n° entero y positivo"
         if num>1: 
@@ -86,6 +90,3 @@ F2=Funciones_2([1,1,2,5,8,8,9,11,15,16,16,16,18,20])
     
 #Primos=F2.es_primo
 #print(Primos) # No entiendo por que era que no me da el resultado acá..
-import os.path
-rut=os.path.abspath("Archivo_punto_8.py")
-print(rut)
