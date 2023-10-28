@@ -11,8 +11,15 @@ class Funciones_2():
             print('El factorial de ', i, 'es', self._facto(i))
             
     def convertidor_temp(self, origen, destino):
+        parametros_esperados=["Celsius","Farenheit","Kelvin"]
+        lista_conversion=[]
+        if str(origen) not in parametros_esperados:
+            print(f"Los parámetros permitidos son: {parametros_esperados}")
+        if str(destino) not in parametros_esperados:
+            print(f"Los parámetros permitidos son: {parametros_esperados}")
         for i in self.lista_final:
-            print(i, 'grados', origen, 'son', self._convertidor_temp(i, origen, destino),'grados',destino)
+            lista_conversion.append(self._convertidor_temp(i,origen,destino))
+        return lista_conversion
 
     def es_primo(self):
         for i in self.lista_final:
