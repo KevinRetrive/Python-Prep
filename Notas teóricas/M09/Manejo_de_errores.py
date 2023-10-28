@@ -90,4 +90,7 @@ class PruebaDeCristalTest(unittest.TestCase):
 unittest.main(argv=[""],verbosity=2,exit=False)
 
 # Forma de escribir en mi pc las rutas:
-# c:\\Users\\Kevin\\OneDrive\\Escritorio\\Pyhton-Prep\\#Carpeta_que_quiera
+# import sys
+# print(sys.path) con esto veo la ruta en la que estoy
+# sys.path.insert(0,'c:/Users/Kevin/OneDrive/Escritorio/Python-Prep/M08_clasesyOOP/Archivo_punto_8.py')
+

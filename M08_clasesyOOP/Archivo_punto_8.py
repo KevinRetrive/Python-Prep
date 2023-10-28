@@ -2,7 +2,7 @@ class Funciones_2():
     def __init__(self,lista_final):
         if type(lista_final)!=list:
             self.lista_final=[]
-            raise ValueError("Se ingresaron tipo de datos inválidos, se esperaba una lista de números enteros")
+            raise ValueError("Se ingresaron tipo/s de dato/s inválido/s, se esperaba una lista de números enteros")
         else:
             self.lista_final=lista_final
 
@@ -15,10 +15,13 @@ class Funciones_2():
         lista_conversion=[]
         if str(origen) not in parametros_esperados:
             print(f"Los parámetros permitidos son: {parametros_esperados}")
-        if str(destino) not in parametros_esperados:
+            return lista_conversion
+        elif str(destino) not in parametros_esperados:
             print(f"Los parámetros permitidos son: {parametros_esperados}")
+            return lista_conversion
         for i in self.lista_final:
             lista_conversion.append(self._convertidor_temp(i,origen,destino))
+            print(f"{i} grados {origen}, son ",self._convertidor_temp(i,origen,destino),f"grados {destino}")
         return lista_conversion
 
     def es_primo(self):
