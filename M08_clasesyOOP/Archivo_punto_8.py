@@ -86,5 +86,6 @@ F2=Funciones_2([1,1,2,5,8,8,9,11,15,16,16,16,18,20])
     
 #Primos=F2.es_primo
 #print(Primos) # No entiendo por que era que no me da el resultado acá..
-import sys
-print(sys.path)
+import os.path
+rut=os.path.abspath("Archivo_punto_8.py")
+print(rut)
