@@ -87,3 +87,9 @@ print("-----------------------------------")
 lista=[1,2,3]
 print(dir(lista)) 
 # Nos muestra todas las funciones aplicables a un iterable tipo lista
+
+
+# Forma de escribir en mi pc las rutas:
+# import sys
+# print(sys.path) con esto veo la ruta en la que estoy
+# sys.path.insert(0,'c:/Users/Kevin/OneDrive/Escritorio/Python-Prep/M08_clasesyOOP/Archivo_punto_8.py')
