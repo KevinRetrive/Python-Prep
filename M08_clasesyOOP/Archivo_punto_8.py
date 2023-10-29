@@ -59,13 +59,15 @@ class Funciones_2():
             print(f"La unidad de origen es igual a la de destino:")
         return round(temperatura_new,2)
     
-    def repetidos(self):
+    def repetidos(self,menor):
         lista_sinrepe = []
         lista_repe = []
-        if len(self.lista_final==0):
+        if len(self.lista_final)==0:
             return None
-        #if (menor):
-        #    self.lista_final.sort()
+        if (menor):
+            self.lista_final.sort()
+        else:
+            self.lista_final.sort(reverse=True)
         for elem in self.lista_final:
             if  elem in lista_sinrepe:
                 i=lista_sinrepe.index(elem)
@@ -96,7 +98,7 @@ class Funciones_2():
                 lista_primos.append(elem)
         return f"El conjunto de n° primos es: {lista_primos}"
     
-F2=Funciones_2([1,1,2,5,8,8,9,11,15,16,16,16,18,20])
+F3=Funciones_2([1,1,1,1,1,2,5,8,8,9,11,15,16,16,16,18,20])
     
 #Primos=F2.es_primo
 #print(Primos) # No entiendo por que era que no me da el resultado acá..
